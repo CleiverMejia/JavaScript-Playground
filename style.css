@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  height: 100vh;
+  gap: 1rem;
+}
+
+textarea {
+  width: 50vh;
+}
+
+p {
+  margin: 0;
+}
+
+label {
+  position: absolute;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+#result {
+  width: 50vh;
+  background-color: gainsboro;
+  font-family: monospace;
+}

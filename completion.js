@@ -32,5 +32,6 @@ wordKey = [
   "void",
   "while",
   "with",
-  "yield"
+  "yield",
+  "console"
 ]

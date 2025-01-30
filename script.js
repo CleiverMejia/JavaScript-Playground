@@ -26,13 +26,15 @@ function completion(lines) {
   let word = words[words.length - 1];
 
   if (word.length > 0) {
-    $completion.innerHTML = wordKey.filter((e) => {
+    let filterKey = wordKey.filter((e) => {
       return e.startsWith(word);
     }).map((e) => {
       return `<span>${e}</span>`;
     }).join("");
 
-    $completion.style.opacity = 1;
+    $completion.innerHTML = filterKey
+
+    $completion.style.opacity = +(filterKey.length !== 0);
     $completion.style.top = `${(lines.length + 1)}em`;
     $completion.style.left = `0.7em`;
   } else {
